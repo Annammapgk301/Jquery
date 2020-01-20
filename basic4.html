@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script src="jquery-1.11.0.js"></script>
+        <body>
+                <button id="btn1">login</button>
+                <button id="btn2">signup</button>
+            <script>
+                $(document).ready(function(){
+                    $("#btn1").click(function(){
+                        if($("#login").is(':visible'))
+                        {
+                            $("#login").fadeOut(200);
+                        }
+                   else{
+                       $("#login").fadeIn(200);
+                   }
+                });
+                    $("#btn2").click(function(){
+                        if($("#reg").is(':visible'))
+                        {
+                            $("#reg").fadeOut(200);
+                        }
+                   else{
+                       $("#reg").fadeIn(200);
+                   }
+                });
+            });
+            
+            </script>
+            <div id="login">
+                <input type="email" placeholder="email"><br>
+                <input type="password" placeholder="password"><br>
+                <button type="submit" placeholder="submit">login</button>
+                
+            </div>
+            <div id="reg">
+                <input type="text" placeholder="name"><br>
+                <input type="text" placeholder="address"><br>
+                <input type="text" placeholder="age"><br>
+                <input type="text" placeholder="city"><br>
+                <input type="text" placeholder="phone"><br>
+                <button type="submit" placeholder="login">submit</button>
+            </div>
+        </body>
+    </head>
+</html>

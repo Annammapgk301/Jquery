@@ -1,0 +1,81 @@
+<html>
+<title>Hackerang</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/js/bootstrap.min.js">
+        <script src="jquery-1.11.0.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style>
+#log{
+    background-color: chartreuse;
+    width:500px;
+    height: 400px;
+}
+
+
+</style>
+
+    <body>
+<div class="container">
+  <h2><b>HackerRank</b></h2>
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('London')">signup</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Login</button>
+  </div>
+
+<div id="London" class="w3-container city">
+    <div class="form-row">
+        <label for="">Name</label>
+        <input type="text" placeholder="name">
+    </div>
+    <div class="form-row">
+        <label for="">Email</label>
+        <input type="text" placeholder="Email">
+    </div>
+    <div class="form-row">
+        <label for="">Password</label>
+        <input type="password" placeholder="password">
+    </div>
+    <div class="form-row">
+        <label for="">Retype password</label>
+        <input type="password" placeholder="retype passwoed">
+    </div>
+    <div class="rem-now">
+        <input type="checkbox" id="agr">
+        <label for="agr">Agree terms & conditions</label>
+    </div>
+    <div class="form-now">
+        <button>sign up</button>
+    </div>
+    </div>
+<div id="Paris" class="w3-container city" style="display:none">
+    <div class="form-row">
+        <label for=" ">Email</label>
+        <input type="text" placeholder="email">
+        </div>
+        <div class="form-row">
+            <label for=" ">Email</label>
+            <input type="text" placeholder="email">
+            </div>
+            <div class="rem-now">
+                <input type="ckeckbox" id="rem">
+                <label for="rem">REmember me</label>
+            </div>
+            <div class="form-now">
+                <button>Login</button>
+            </div>
+        </div>
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>validation</title>
+        <script src="jquery-1.11.0.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <Style>
+     body{
+         background-image: url("classroom.jpg");
+     }
+     .container{
+         margin-top: 5%;
+         width: 80%;
+         height:80%;
+         background-color:white;
+     }
+     #firstname{
+        border-top:transparent;
+        border-left:transparent;
+        border-right:transparent;
+        border-bottom:3px solid red;
+     }
+    #lastname{
+        border-top:transparent;
+        border-left:transparent;
+        border-right:transparent;
+        border-bottom:3px solid red;
+     }
+     #email{
+        border-top:transparent;
+        border-left:transparent;
+        border-right:transparent;
+        border-bottom:3px solid red;
+     }
+     #password{
+        border-top:transparent;
+        border-left:transparent;
+        border-right:transparent;
+        border-bottom:3px solid red;
+     }
+     #button1{
+         margin-left:2%;
+         margin-top:-25%;
+         border-radius:35%;
+     }
+     #button2{
+         margin-left:10%;
+         margin-top:-25;
+     }
+    
+    </Style>
+
+</head>
+    <body>
+<div class="container">
+        <pre>
+            <h2><b><font color="blue">REGISTER</font></b></h2>
+    <form action="" name="registration">
+        <i class="fa fa-user" aria-hidden="true">  <input type="text" name="firstname" id="firstname" placeholder="firstname"/></i><br><br>
+        
+        <i class="fa fa-user" aria-hidden="true">  <input type="text" name="lastname" id="lastname" placeholder="lastname"/></i>
+        
+        <i class="fa fa-envelope" aria-hidden="true">  <input type="email" name="email" id="email" placeholder="Email"/></i>
+        
+    
+        
+        <input type="password" name="password" id="password" placeholder="password"/><i class="fa fa-lock" aria-hidden="true"></i><br><br>
+        
+        <input type="password" name="password" id="password" placeholder="Retype password"/><i class="fa fa-lock" aria-hidden="true"></i><br><br>
+        <button type="submit" id="button1">Register</button>
+        <button type="submit" id="button2">Reset</button>
+    </pre>
+      </form>
+    </div>
+</body>
+  </html>

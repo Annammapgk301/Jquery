@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <script src="jquery-1.11.0.js"></script>
+        <style>
+        #b1{height: 300px; width: 300px; float: left; background: blue;}
+        #b2b2b2{height: 300px; width: 300px; float: left; background:brown;}
+        #b3{height: 300px; width: 300px; float: left; background:red;}
+         </style>
+        <body>
+            <h1>ddu</h1>
+                
+            <script>
+                $(document).ready(function(){
+                    $("#b1").fadeout("slow");
+                        ($("#t1").click(function(){
+                        });
+                            $("#b2").fadein("slow",0.90);    
+                        });
+                    });
+
+                        {
+                            $("#login").fadeOut(200);
+                        }
+                   else{
+                       $("#login").fadeIn(200);
+                   }
+                });
+                    $("#btn2").click(function(){
+                        if($("#reg").is(':visible'))
+                        {
+                            $("#reg").fadeOut(200);
+                        }
+                   else{
+                       $("#reg").fadeIn(200);
+                   }
+                });
+            });
+            
+            </script>
+            <div id="login">
+                <input type="email" placeholder="email"><br>
+                <input type="password" placeholder="password"><br>
+                <button type="submit" placeholder="submit">login</button>
+                
+            </div>
+            <div id="reg">
+                <input type="text" placeholder="name"><br>
+                <input type="text" placeholder="address"><br>
+                <input type="text" placeholder="age"><br>
+                <input type="text" placeholder="city"><br>
+                <input type="text" placeholder="phone"><br>
+                <button type="submit" placeholder="login">submit</button>
+            </div>
+        </body>
+    </head>
+</html>
